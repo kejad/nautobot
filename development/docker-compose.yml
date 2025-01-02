@@ -84,6 +84,12 @@ services:
         - "4444:4444"
         - "15900:5900"
     shm_size: 2g
+  db:
+    image: postgres:latest
+    ports:
+        - "5433:5432"
+    env_file:
+      - ./dev.env
   mkdocs:
     profiles:
       - mkdocs

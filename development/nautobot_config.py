@@ -57,6 +57,7 @@ LOGGING["loggers"]["nautobot"]["level"] = LOG_LEVEL  # noqa: F405
 
 PLUGINS = [
     "example_app",
+    "jldw_app",
 ]
 
 CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
@@ -90,3 +91,17 @@ METRICS_AUTHENTICATED = False
 METRICS_DISABLED_APPS = []
 
 CELERY_WORKER_PROMETHEUS_PORTS = [8080]
+
+# DATABASES = {
+#     'default': {
+#         'NAME': 'nautobot',                         # Database name
+#         'USER': 'nautobot',                         # PostgreSQL username
+#         'PASSWORD': 'decinablesprewad',             # PostgreSQL password
+#         'HOST': '0.0.0.0',                        # Database server
+#         'PORT': '',                                 # Database port (leave blank for default)
+#         'CONN_MAX_AGE': 300,                        # Max database connection age
+#         'ENGINE': 'django.db.backends.postgresql',  # Database driver (Do not change this!)
+#     }
+# }
+
+

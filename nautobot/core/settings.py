@@ -1110,3 +1110,7 @@ def silk_request_logging_intercept_logic(request):
 
 
 SILKY_INTERCEPT_FUNC = silk_request_logging_intercept_logic
+
+NAUTOBOT_API_URL = "https://demo.nautobot.com/api/dcim/devices"
+NAUTOBOT_API_TOKEN = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+

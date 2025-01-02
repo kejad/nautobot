@@ -28,7 +28,7 @@ jobs:
           POSTGRES_PASSWORD: "decinablesprewad"
           POSTGRES_DB: "nautobot"
         ports:
-          - "5432:5432"
+          - "5433:5432"
     steps:
       - name: "Check out repository code"
         uses: "actions/checkout@v4"
@@ -57,7 +57,7 @@ jobs:
           POSTGRES_PASSWORD: "decinablesprewad"
           POSTGRES_DB: "nautobot"
         ports:
-          - "5432:5432"
+          - "5433:5432"
       redis:
         image: "redis:6-alpine"
         ports:
@@ -162,7 +162,7 @@ jobs:
           POSTGRES_PASSWORD: "decinablesprewad"
           POSTGRES_DB: "nautobot"
         ports:
-          - "5432:5432"
+          - "5433:5432"
     steps:
       - name: "Check out repository code"
         uses: "actions/checkout@v4"
@@ -190,7 +190,7 @@ jobs:
           POSTGRES_PASSWORD: "decinablesprewad"
           POSTGRES_DB: "nautobot"
         ports:
-          - "5432:5432"
+          - "5433:5432"
       redis:
         image: "redis:6-alpine"
         ports:

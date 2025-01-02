@@ -18,6 +18,7 @@ JOBS_ROOT = os.path.join(
 # Enable both example apps
 PLUGINS = [
     "example_app",
+    "jldw_app",
     "example_app_with_view_override",
 ]
 
